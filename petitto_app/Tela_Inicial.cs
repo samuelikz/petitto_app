@@ -63,14 +63,9 @@ namespace petitto_app
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+            openChildFormInPanel(new Tela_Pets());
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -120,6 +115,11 @@ namespace petitto_app
         private void button3_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new Tela_Cadastro());
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

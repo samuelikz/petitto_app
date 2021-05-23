@@ -31,7 +31,6 @@ namespace petitto_app
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.X = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -48,25 +47,12 @@ namespace petitto_app
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.X);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 100);
             this.panel1.TabIndex = 3;
-            // 
-            // X
-            // 
-            this.X.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.X.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.X.Location = new System.Drawing.Point(785, 33);
-            this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(40, 40);
-            this.X.TabIndex = 3;
-            this.X.Text = "X";
-            this.X.UseVisualStyleBackColor = true;
-            this.X.Click += new System.EventHandler(this.X_Click);
             // 
             // label1
             // 
@@ -80,14 +66,14 @@ namespace petitto_app
             this.label1.Text = "CADASTRO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // Tela_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 637);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Tela_Cadastro";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -99,7 +85,6 @@ namespace petitto_app
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button X;
         private System.Windows.Forms.Label label1;
     }
 }

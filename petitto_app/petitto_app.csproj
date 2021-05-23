@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tela_Pets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Pets.Designer.cs">
+      <DependentUpon>Tela_Pets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tela_Inicial.resx">
       <DependentUpon>Tela_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Pets.resx">
+      <DependentUpon>Tela_Pets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tela_Usuarios.resx">
       <DependentUpon>Tela_Usuarios.cs</DependentUpon>
