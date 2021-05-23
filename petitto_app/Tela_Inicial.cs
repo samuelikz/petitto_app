@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO; // Fornece classes para tratar arquivos
+using System.Net; // Fornece classes para protocolos de rede
+using Newtonsoft.Json; // Permite serializar e deserializar objeto Json no .net
 
 namespace petitto_app
 {
@@ -11,6 +14,7 @@ namespace petitto_app
         public Tela_Inicial()
         {
             InitializeComponent();
+            openChildFormInPanel(new Tela_Pets());
         }
 
         private void Form1_Load(object sender, System.EventArgs e)
@@ -118,6 +122,11 @@ namespace petitto_app
         }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -43,10 +43,8 @@ namespace petitto_app
             this.panel2 = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelChildForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -210,6 +208,7 @@ namespace petitto_app
             // panel2
             // 
             this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.panel2.Controls.Add(this.buttonExit);
             this.panel2.Controls.Add(this.buttonMax);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -224,24 +223,13 @@ namespace petitto_app
             // 
             // panelChildForm
             // 
-            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(281, 39);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(853, 690);
             this.panelChildForm.TabIndex = 4;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(102)))));
-            this.label1.Location = new System.Drawing.Point(12, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PETS";
             // 
             // Tela_Inicial
             // 
@@ -262,8 +250,6 @@ namespace petitto_app
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panelChildForm.ResumeLayout(false);
-            this.panelChildForm.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +270,6 @@ namespace petitto_app
         private System.Windows.Forms.Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panelChildForm;
-        private System.Windows.Forms.Label label1;
     }
 }
 

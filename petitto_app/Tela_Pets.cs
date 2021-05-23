@@ -21,5 +21,23 @@ namespace petitto_app
         {
 
         }
+
+        private void Tela_Pets_Load(object sender, EventArgs e)
+        {
+            var pets = ListarPets.BuscarPets();
+
+            foreach (ListarPets pet in pets)
+            {
+                ListViewItem item = new ListViewItem(new[] {
+                    pet.id.ToString(), pet.name.ToString(), pet.birthDate.ToString(), pet.nin.ToString() 
+                });
+                listView1.Items.Add(item);
+            }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
