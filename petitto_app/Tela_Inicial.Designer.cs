@@ -30,44 +30,44 @@ namespace petitto_app
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Inicial));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.labelVersion = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonPets = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
+            this.buttonUsers = new System.Windows.Forms.Button();
+            this.buttonPesquisar = new System.Windows.Forms.Button();
+            this.buttonCad = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Close = new System.Windows.Forms.Button();
+            this.panelNavbar = new System.Windows.Forms.Panel();
             this.buttonRestore = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.Close = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelNavbar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(76)))));
-            this.panel1.Controls.Add(this.labelVersion);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 729);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.labelVersion);
+            this.panelMenu.Controls.Add(this.buttonDelete);
+            this.panelMenu.Controls.Add(this.buttonPets);
+            this.panelMenu.Controls.Add(this.buttonAlterar);
+            this.panelMenu.Controls.Add(this.buttonUsers);
+            this.panelMenu.Controls.Add(this.buttonPesquisar);
+            this.panelMenu.Controls.Add(this.buttonCad);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(281, 729);
+            this.panelMenu.TabIndex = 0;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.panelMenu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.panelMenu.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
             // labelVersion
             // 
@@ -82,103 +82,120 @@ namespace petitto_app
             this.labelVersion.Text = "V.1";
             this.labelVersion.Click += new System.EventHandler(this.labelVersion_Click);
             // 
-            // button6
+            // buttonDelete
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(10, 521);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(260, 75);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "EXCLUIR";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonDelete.Location = new System.Drawing.Point(12, 514);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Padding = new System.Windows.Forms.Padding(1);
+            this.buttonDelete.Size = new System.Drawing.Size(260, 75);
+            this.buttonDelete.TabIndex = 6;
+            this.buttonDelete.Text = "EXCLUIR";
+            this.buttonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // button5
+            // buttonPets
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(10, 440);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(260, 75);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "ALTERAR";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonPets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonPets.FlatAppearance.BorderSize = 0;
+            this.buttonPets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPets.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonPets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonPets.Location = new System.Drawing.Point(12, 109);
+            this.buttonPets.Name = "buttonPets";
+            this.buttonPets.Size = new System.Drawing.Size(260, 75);
+            this.buttonPets.TabIndex = 1;
+            this.buttonPets.Text = "LISTAR PETS";
+            this.buttonPets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPets.UseVisualStyleBackColor = false;
+            this.buttonPets.Click += new System.EventHandler(this.buttonPets_Click_1);
             // 
-            // button4
+            // buttonAlterar
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(10, 359);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(260, 75);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "PESQUISAR";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonAlterar.FlatAppearance.BorderSize = 0;
+            this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlterar.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonAlterar.Location = new System.Drawing.Point(12, 433);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Padding = new System.Windows.Forms.Padding(1);
+            this.buttonAlterar.Size = new System.Drawing.Size(260, 75);
+            this.buttonAlterar.TabIndex = 5;
+            this.buttonAlterar.Text = "ALTERAR";
+            this.buttonAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAlterar.UseVisualStyleBackColor = false;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
-            // button3
+            // buttonUsers
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(10, 278);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 75);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "CADASTRAR";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonUsers.FlatAppearance.BorderSize = 0;
+            this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsers.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonUsers.Location = new System.Drawing.Point(12, 190);
+            this.buttonUsers.Name = "buttonUsers";
+            this.buttonUsers.Size = new System.Drawing.Size(260, 75);
+            this.buttonUsers.TabIndex = 2;
+            this.buttonUsers.Text = "LISTAR USUARIOS";
+            this.buttonUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUsers.UseVisualStyleBackColor = false;
+            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click_1);
             // 
-            // button2
+            // buttonPesquisar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(10, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 75);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "LISTAR USUARIOS";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.buttonPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonPesquisar.FlatAppearance.BorderSize = 0;
+            this.buttonPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPesquisar.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonPesquisar.Location = new System.Drawing.Point(12, 352);
+            this.buttonPesquisar.Name = "buttonPesquisar";
+            this.buttonPesquisar.Size = new System.Drawing.Size(260, 75);
+            this.buttonPesquisar.TabIndex = 4;
+            this.buttonPesquisar.Text = "PESQUISAR";
+            this.buttonPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPesquisar.UseVisualStyleBackColor = false;
+            this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
-            // button1
+            // buttonCad
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(10, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 75);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "LISTAR PETS";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.buttonCad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonCad.FlatAppearance.BorderSize = 0;
+            this.buttonCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCad.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.buttonCad.Location = new System.Drawing.Point(12, 271);
+            this.buttonCad.Name = "buttonCad";
+            this.buttonCad.Size = new System.Drawing.Size(260, 75);
+            this.buttonCad.TabIndex = 3;
+            this.buttonCad.Text = "CADASTRAR";
+            this.buttonCad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCad.UseVisualStyleBackColor = false;
+            this.buttonCad.Click += new System.EventHandler(this.buttonCad_Click);
             // 
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.panelChildForm.Controls.Add(this.panel3);
+            this.panelChildForm.Controls.Add(this.panelNavbar);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(281, 0);
             this.panelChildForm.Name = "panelChildForm";
@@ -186,33 +203,34 @@ namespace petitto_app
             this.panelChildForm.TabIndex = 4;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
-            // panel2
+            // panelNavbar
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(281, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(853, 0);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
+            this.panelNavbar.Controls.Add(this.buttonRestore);
+            this.panelNavbar.Controls.Add(this.Close);
+            this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelNavbar.Location = new System.Drawing.Point(0, 0);
+            this.panelNavbar.Name = "panelNavbar";
+            this.panelNavbar.Size = new System.Drawing.Size(853, 55);
+            this.panelNavbar.TabIndex = 0;
+            this.panelNavbar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNavbar_Paint);
+            this.panelNavbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.panelNavbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.panelNavbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
-            // panel3
+            // buttonRestore
             // 
-            this.panel3.Controls.Add(this.buttonRestore);
-            this.panel3.Controls.Add(this.Close);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(853, 55);
-            this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
-            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
+            this.buttonRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRestore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonRestore.FlatAppearance.BorderSize = 0;
+            this.buttonRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRestore.Image = ((System.Drawing.Image)(resources.GetObject("buttonRestore.Image")));
+            this.buttonRestore.Location = new System.Drawing.Point(754, 4);
+            this.buttonRestore.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonRestore.Name = "buttonRestore";
+            this.buttonRestore.Size = new System.Drawing.Size(48, 48);
+            this.buttonRestore.TabIndex = 1;
+            this.buttonRestore.UseVisualStyleBackColor = true;
+            this.buttonRestore.Click += new System.EventHandler(this.buttonRestore_Click);
             // 
             // Close
             // 
@@ -231,20 +249,19 @@ namespace petitto_app
             this.Close.UseVisualStyleBackColor = true;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
-            // buttonRestore
+            // panel2
             // 
-            this.buttonRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRestore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonRestore.FlatAppearance.BorderSize = 0;
-            this.buttonRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRestore.Image = ((System.Drawing.Image)(resources.GetObject("buttonRestore.Image")));
-            this.buttonRestore.Location = new System.Drawing.Point(754, 4);
-            this.buttonRestore.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonRestore.Name = "buttonRestore";
-            this.buttonRestore.Size = new System.Drawing.Size(48, 48);
-            this.buttonRestore.TabIndex = 1;
-            this.buttonRestore.UseVisualStyleBackColor = true;
-            this.buttonRestore.Click += new System.EventHandler(this.button7_Click);
+            this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(281, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(853, 0);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
             // Tela_Inicial
             // 
@@ -254,7 +271,7 @@ namespace petitto_app
             this.ClientSize = new System.Drawing.Size(1134, 729);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Tela_Inicial";
@@ -262,10 +279,10 @@ namespace petitto_app
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.panelChildForm.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panelNavbar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,19 +290,21 @@ namespace petitto_app
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonAlterar;
+        private System.Windows.Forms.Button buttonPesquisar;
+        private System.Windows.Forms.Button buttonCad;
+        private System.Windows.Forms.Button buttonUsers;
+        private System.Windows.Forms.Button buttonPets;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelNavbar;
+#pragma warning disable CS0108 // "Tela_Inicial.Close" oculta o membro herdado "Form.Close()". Use a nova palavra-chave se foi pretendido ocultar.
         private System.Windows.Forms.Button Close;
+#pragma warning restore CS0108 // "Tela_Inicial.Close" oculta o membro herdado "Form.Close()". Use a nova palavra-chave se foi pretendido ocultar.
         private System.Windows.Forms.Button buttonRestore;
     }
 }

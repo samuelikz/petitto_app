@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.IO; // Fornece classes para tratar arquivos
-using System.Net; // Fornece classes para protocolos de rede
-using Newtonsoft.Json; // Permite serializar e deserializar objeto Json no .net
 
 namespace petitto_app
 {
@@ -52,7 +49,7 @@ namespace petitto_app
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -67,7 +64,7 @@ namespace petitto_app
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void buttonPets_Click_1(object sender, EventArgs e)
         {
             openChildFormInPanel(new Tela_Pets());
         }
@@ -96,7 +93,7 @@ namespace petitto_app
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void buttonUsers_Click_1(object sender, EventArgs e)
         {
             openChildFormInPanel(new Tela_Usuarios());
         }
@@ -116,7 +113,7 @@ namespace petitto_app
             childForm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonCad_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new Tela_Cadastro());
         }
@@ -136,7 +133,7 @@ namespace petitto_app
             Application.Exit();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonRestore_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Maximized)
             {
@@ -148,7 +145,22 @@ namespace petitto_app
             }
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void panelNavbar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
         {
 
         }
