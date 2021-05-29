@@ -181,7 +181,7 @@ namespace petitto_app
             this.buttonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Location = new System.Drawing.Point(814, 6);
+            this.buttonExit.Location = new System.Drawing.Point(814, 5);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(0);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(30, 30);
@@ -197,7 +197,7 @@ namespace petitto_app
             this.buttonMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonMax.FlatAppearance.BorderSize = 0;
             this.buttonMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMax.Location = new System.Drawing.Point(777, 6);
+            this.buttonMax.Location = new System.Drawing.Point(777, 5);
             this.buttonMax.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMax.Name = "buttonMax";
             this.buttonMax.Size = new System.Drawing.Size(30, 30);
@@ -214,7 +214,7 @@ namespace petitto_app
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(281, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(853, 36);
+            this.panel2.Size = new System.Drawing.Size(853, 35);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
@@ -225,9 +225,9 @@ namespace petitto_app
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(281, 36);
+            this.panelChildForm.Location = new System.Drawing.Point(281, 35);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(853, 693);
+            this.panelChildForm.Size = new System.Drawing.Size(853, 694);
             this.panelChildForm.TabIndex = 4;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
