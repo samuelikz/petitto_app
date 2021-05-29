@@ -71,6 +71,7 @@ namespace petitto_app
             this.name,
             this.birthDate,
             this.nim});
+            this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(16, 106);
             this.listView1.Name = "listView1";
