@@ -14,7 +14,7 @@ namespace petitto_app
         public Tela_Inicial()
         {
             InitializeComponent();
-            openChildFormInPanel(new Tela_Pets());
+            openChildFormInPanel(new Tela_abertura());
         }
 
         private void Form1_Load(object sender, System.EventArgs e)

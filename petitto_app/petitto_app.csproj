@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tela_abertura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_abertura.Designer.cs">
+      <DependentUpon>Tela_abertura.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarPets.cs" />
     <Compile Include="Tela_Pets.cs">
       <SubType>Form</SubType>
@@ -76,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Tela_abertura.resx">
+      <DependentUpon>Tela_abertura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tela_Cadastro.resx">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
