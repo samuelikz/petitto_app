@@ -42,7 +42,7 @@ namespace petitto_app
                 foreach (ListarUsers user in users)
                 {
                     ListViewItem item = new ListViewItem(new[] {
-                        user.id.ToString(), user.nome.ToString(), user.email.ToString(), user.cpf.ToString(),user.telefone.ToString()
+                        user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(),user.telefone.ToString()
                     });
                     listView_Users.Items.Add(item);
                 }
