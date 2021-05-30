@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListarUsers.cs" />
     <Compile Include="Tela_abertura.cs">
       <SubType>Form</SubType>
     </Compile>

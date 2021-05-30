@@ -32,10 +32,13 @@ namespace petitto_app
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.birthDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.nim = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sexo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.urlimage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,41 +68,56 @@ namespace petitto_app
             this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Id,
-            this.name,
-            this.birthDate,
-            this.nim});
+            this.id,
+            this.cpf,
+            this.nome,
+            this.sexo,
+            this.idade,
+            this.raca,
+            this.urlimage});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(16, 106);
+            this.listView1.Location = new System.Drawing.Point(18, 106);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(809, 425);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // Id
+            // id
             // 
-            this.Id.Text = "id";
-            this.Id.Width = 100;
+            this.id.Text = "Id";
             // 
-            // name
+            // cpf
             // 
-            this.name.Text = "Name";
-            this.name.Width = 200;
+            this.cpf.Text = "CPF";
+            this.cpf.Width = 200;
             // 
-            // birthDate
+            // nome
             // 
-            this.birthDate.Text = "birthDate";
-            this.birthDate.Width = 200;
+            this.nome.Text = "Nome";
+            this.nome.Width = 200;
             // 
-            // nim
+            // sexo
             // 
-            this.nim.Text = "nim";
-            this.nim.Width = 200;
+            this.sexo.Text = "Sexo";
+            this.sexo.Width = 90;
+            // 
+            // idade
+            // 
+            this.idade.Text = "Idade";
+            // 
+            // raca
+            // 
+            this.raca.Text = "Raça";
+            this.raca.Width = 90;
+            // 
+            // urlimage
+            // 
+            this.urlimage.Text = "ImagemUrl";
+            this.urlimage.Width = 200;
             // 
             // Tela_Pets
             // 
@@ -124,9 +142,12 @@ namespace petitto_app
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Id;
-        private System.Windows.Forms.ColumnHeader name;
-        private System.Windows.Forms.ColumnHeader birthDate;
-        private System.Windows.Forms.ColumnHeader nim;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader cpf;
+        private System.Windows.Forms.ColumnHeader nome;
+        private System.Windows.Forms.ColumnHeader sexo;
+        private System.Windows.Forms.ColumnHeader idade;
+        private System.Windows.Forms.ColumnHeader raca;
+        private System.Windows.Forms.ColumnHeader urlimage;
     }
 }

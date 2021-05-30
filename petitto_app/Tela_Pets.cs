@@ -22,7 +22,7 @@ namespace petitto_app
             foreach (ListarPets pet in pets)
             {
                 ListViewItem item = new ListViewItem(new[] {
-                    pet.id.ToString(), pet.name.ToString(), pet.birthDate.ToString(), pet.nin.ToString()
+                    pet.id.ToString(),pet.cpf.ToString(), pet.nome.ToString(), pet.sexo.ToString(),pet.idade.ToString(),pet.raca.ToString(), pet.urlimage.ToString()
                 });
                 listView1.Items.Add(item);
             }

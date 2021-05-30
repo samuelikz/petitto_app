@@ -34,5 +34,28 @@ namespace petitto_app
         {
 
         }
+
+        private void Tela_Usuarios_Load(object sender, EventArgs e)
+        {
+            var users = ListarUsers.BuscarUsers();
+
+                foreach (ListarUsers user in users)
+                {
+                    ListViewItem item = new ListViewItem(new[] {
+                        user.id.ToString(), user.nome.ToString(), user.email.ToString(), user.cpf.ToString(),user.telefone.ToString()
+                    });
+                    listView_Users.Items.Add(item);
+                }
+        }
+
+        private void listView_Users_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

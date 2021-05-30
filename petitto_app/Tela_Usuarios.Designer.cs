@@ -30,7 +30,12 @@ namespace petitto_app
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listView_Users = new System.Windows.Forms.ListView();
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.telefone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -40,7 +45,7 @@ namespace petitto_app
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.listView_Users);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -49,17 +54,51 @@ namespace petitto_app
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // listView1
+            // listView_Users
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listView_Users.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(16, 108);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(809, 425);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView_Users.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.cpf,
+            this.nome,
+            this.email,
+            this.telefone});
+            this.listView_Users.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView_Users.GridLines = true;
+            this.listView_Users.HideSelection = false;
+            this.listView_Users.Location = new System.Drawing.Point(18, 106);
+            this.listView_Users.Name = "listView_Users";
+            this.listView_Users.Size = new System.Drawing.Size(809, 425);
+            this.listView_Users.TabIndex = 3;
+            this.listView_Users.UseCompatibleStateImageBehavior = false;
+            this.listView_Users.View = System.Windows.Forms.View.Details;
+            this.listView_Users.SelectedIndexChanged += new System.EventHandler(this.listView_Users_SelectedIndexChanged);
+            // 
+            // id
+            // 
+            this.id.Text = "Id";
+            // 
+            // nome
+            // 
+            this.nome.Text = "Nome";
+            this.nome.Width = 200;
+            // 
+            // email
+            // 
+            this.email.Text = "E-mail";
+            this.email.Width = 200;
+            // 
+            // cpf
+            // 
+            this.cpf.Text = "CPF";
+            this.cpf.Width = 130;
+            // 
+            // telefone
+            // 
+            this.telefone.Text = "Telefone";
+            this.telefone.Width = 130;
             // 
             // panel2
             // 
@@ -69,6 +108,7 @@ namespace petitto_app
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(837, 100);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -91,6 +131,7 @@ namespace petitto_app
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tela_Usuarios";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Tela_Usuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -103,6 +144,11 @@ namespace petitto_app
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listView_Users;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader nome;
+        private System.Windows.Forms.ColumnHeader email;
+        private System.Windows.Forms.ColumnHeader cpf;
+        private System.Windows.Forms.ColumnHeader telefone;
     }
 }

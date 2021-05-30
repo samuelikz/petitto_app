@@ -224,7 +224,7 @@ namespace petitto_app
             this.buttonRestore.FlatAppearance.BorderSize = 0;
             this.buttonRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRestore.Image = ((System.Drawing.Image)(resources.GetObject("buttonRestore.Image")));
-            this.buttonRestore.Location = new System.Drawing.Point(754, 4);
+            this.buttonRestore.Location = new System.Drawing.Point(754, 3);
             this.buttonRestore.Margin = new System.Windows.Forms.Padding(0);
             this.buttonRestore.Name = "buttonRestore";
             this.buttonRestore.Size = new System.Drawing.Size(48, 48);
@@ -240,7 +240,7 @@ namespace petitto_app
             this.Close.FlatAppearance.BorderSize = 0;
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
-            this.Close.Location = new System.Drawing.Point(802, 4);
+            this.Close.Location = new System.Drawing.Point(802, 3);
             this.Close.Margin = new System.Windows.Forms.Padding(0);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(48, 48);
