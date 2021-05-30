@@ -18,7 +18,7 @@ class ListarPets
         public string nin { get; set; }
         public static List<ListarPets> BuscarPets()
         {
-            string url = "http://aurora-project.azurewebsites.net/api/users";
+            string url = "https://json-serverikz.herokuapp.com/pets";
             string json = (new System.Net.WebClient()).DownloadString(url);
 
             var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
