@@ -39,6 +39,8 @@ namespace petitto_app
             this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.urlimage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.categoria = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.descrincao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +77,9 @@ namespace petitto_app
             this.sexo,
             this.idade,
             this.raca,
-            this.urlimage});
+            this.urlimage,
+            this.categoria,
+            this.descrincao});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
@@ -119,6 +123,16 @@ namespace petitto_app
             this.urlimage.Text = "ImagemUrl";
             this.urlimage.Width = 200;
             // 
+            // categoria
+            // 
+            this.categoria.Text = "Categoria";
+            this.categoria.Width = 80;
+            // 
+            // descrincao
+            // 
+            this.descrincao.Text = "Descrincao";
+            this.descrincao.Width = 100;
+            // 
             // Tela_Pets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,5 +163,7 @@ namespace petitto_app
         private System.Windows.Forms.ColumnHeader idade;
         private System.Windows.Forms.ColumnHeader raca;
         private System.Windows.Forms.ColumnHeader urlimage;
+        private System.Windows.Forms.ColumnHeader categoria;
+        private System.Windows.Forms.ColumnHeader descrincao;
     }
 }
