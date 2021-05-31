@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace petitto_app
@@ -18,12 +20,9 @@ namespace petitto_app
         private void Tela_Pets_Load(object sender, EventArgs e)
         {
             var pets = ListarPets.BuscarPets();
-
-            foreach (ListarPets pet in pets)
+            foreach (var item in from ListarPets pet in pets ?? new ListarPets<string>()
+                      let item = new ListViewItem(new[] { pet.id.ToString(),pet.cpf.ToString(),pet.nome.ToString(),pet.sexo.ToString(),pet.idade.ToString(),pet.raca.ToString(),pet.urlimage.ToString(),pet.categoria.ToString(),pet.descrincao.ToString()}) select item)
             {
-                ListViewItem item = new ListViewItem(new[] {
-                    pet.id.ToString(),pet.cpf.ToString(), pet.nome.ToString(), pet.sexo.ToString(),pet.idade.ToString(),pet.raca.ToString(), pet.urlimage.ToString(), pet.categoria.ToString(),pet.descrincao.ToString()
-                }); 
                 listView1.Items.Add(item);
             }
         }
@@ -32,5 +31,13 @@ namespace petitto_app
         {
 
         }
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+    }
+    internal class ListarPets<T> : List<ListarPets>
+    {
     }
 }

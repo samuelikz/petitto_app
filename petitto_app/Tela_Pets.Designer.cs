@@ -89,6 +89,7 @@ namespace petitto_app
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged_1);
             // 
             // id
             // 
@@ -96,7 +97,7 @@ namespace petitto_app
             // 
             // cpf
             // 
-            this.cpf.Text = "CPF";
+            this.cpf.Text = "Doador";
             this.cpf.Width = 200;
             // 
             // nome

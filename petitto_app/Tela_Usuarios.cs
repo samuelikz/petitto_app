@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace petitto_app
@@ -39,11 +41,9 @@ namespace petitto_app
         {
             var users = ListarUsers.BuscarUsers();
 
-                foreach (ListarUsers user in users)
+                foreach (var item in from ListarUsers user in users ?? new ListarUsers<string>()
+                    let item = new ListViewItem(new[] { user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(), user.telefone.ToString()}) select item)
                 {
-                    ListViewItem item = new ListViewItem(new[] {
-                        user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(),user.telefone.ToString()
-                    });
                     listView_Users.Items.Add(item);
                 }
         }
@@ -57,5 +57,9 @@ namespace petitto_app
         {
 
         }
+    }
+
+    internal class ListarUsers<T> : List<ListarUsers>
+    {
     }
 }

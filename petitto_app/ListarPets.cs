@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace petitto_app
 {
@@ -16,13 +17,25 @@ namespace petitto_app
         public string categoria { get; set; }
         public string descrincao { get; set; }
 
+        public static System.Windows.Forms.FormCollection OpenForms { get; }
         public static List<ListarPets> BuscarPets()
         {
-            string url = "https://json-serverikz.herokuapp.com/pets";
-            string json = (new System.Net.WebClient()).DownloadString(url);
+            try
+            {
+                string url = "https://json-serverikz.herokuapp.com/pets";
+                string json = (new System.Net.WebClient()).DownloadString(url);
+                var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
+                return pets;
+            }
+            catch (Exception ex)
+            {
+                string message = "Não foi Possivel Carregar os Dados \n" + "Erro: "+ ex.Message;
+                string title = "Algo Deu Errado";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
 
-            var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
-            return pets;
+                return null;
+            }
         }
     }
 }
