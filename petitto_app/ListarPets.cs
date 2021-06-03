@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Text;
 using System.Collections.Generic;
+using System.Net;
 using System.Windows.Forms;
 
 namespace petitto_app
@@ -17,14 +19,17 @@ namespace petitto_app
         public string categoria { get; set; }
         public string descrincao { get; set; }
 
-        public static System.Windows.Forms.FormCollection OpenForms { get; }
+        public static FormCollection OpenForms { get; }
         public static List<ListarPets> BuscarPets()
         {
             try
             {
-                string url = "https://json-serverikz.herokuapp.com/pets";
-                string json = (new System.Net.WebClient()).DownloadString(url);
+                WebClient webClient = new WebClient();
+                webClient.Encoding = Encoding.UTF8;
+                string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/pets"); // Endereço da [API]
+
                 var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
+
                 return pets;
             }
             catch (Exception ex)

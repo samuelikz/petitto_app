@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,8 +21,9 @@ namespace petitto_app
         {
             try
             {
-                string url = "https://json-serverikz.herokuapp.com/users";
-                string json = (new System.Net.WebClient()).DownloadString(url);
+                WebClient webClient = new WebClient();
+                webClient.Encoding = Encoding.UTF8;
+                string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/users"); // Endereço da [API]
 
                 var users = JsonConvert.DeserializeObject<List<ListarUsers>>(json);
                 return users;
