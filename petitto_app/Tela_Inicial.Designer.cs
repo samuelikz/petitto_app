@@ -205,6 +205,7 @@ namespace petitto_app
             // 
             // panelNavbar
             // 
+            this.panelNavbar.AutoSize = true;
             this.panelNavbar.Controls.Add(this.buttonRestore);
             this.panelNavbar.Controls.Add(this.Close);
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -267,21 +268,21 @@ namespace petitto_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1134, 729);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Tela_Inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Pettito-Admin";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             this.panelNavbar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
