@@ -18,11 +18,12 @@ class ListarPets
         public string nin { get; set; }
         public static List<ListarPets> BuscarPets()
         {
-            string url = "https://json-serverikz.herokuapp.com/pets";
-            string json = (new System.Net.WebClient()).DownloadString(url);
+            WebClient webClient = new WebClient();
+            webClient.Encoding = Encoding.UTF8;
+            string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/users"); // Endereço da [API]
 
-            var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
-            return pets;
+            var users = JsonConvert.DeserializeObject<List<ListarUsers>>(json); // Transformar em Objeto
+            return users;
         }
     }
 ```
