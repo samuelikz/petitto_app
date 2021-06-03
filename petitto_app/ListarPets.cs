@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Text;
 using System.Collections.Generic;
 using System.Net;
+using System.Text;
 using System.Windows.Forms;
 
 namespace petitto_app
@@ -28,13 +28,13 @@ namespace petitto_app
                 webClient.Encoding = Encoding.UTF8;
                 string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/pets"); // Endereço da [API]
 
-                var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json);
+                var pets = JsonConvert.DeserializeObject<List<ListarPets>>(json); // Transformar em Objeto
 
                 return pets;
             }
             catch (Exception ex)
             {
-                string message = "Não foi Possivel Carregar os Dados \n" + "Erro: "+ ex.Message;
+                string message = "Não foi Possivel Carregar os Dados \n" + "Erro: " + ex.Message;
                 string title = "Algo Deu Errado";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);

@@ -41,12 +41,12 @@ namespace petitto_app
         {
             var users = ListarUsers.BuscarUsers();
 
-                foreach (var item in from ListarUsers user in users ?? new ListarUsers<string>()
-                                     let item = new ListViewItem(new[] { user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(), user.telefone.ToString() })
-                                     select item)
-                {
-                    listView_Users.Items.Add(item);
-                }
+            foreach (var item in from ListarUsers user in users ?? new ListarUsers<string>()
+                                 let item = new ListViewItem(new[] { user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(), user.telefone.ToString() })
+                                 select item)
+            {
+                listView_Users.Items.Add(item);
+            }
         }
 
         private void listView_Users_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
 
 
 namespace petitto_app
@@ -25,7 +23,7 @@ namespace petitto_app
                 webClient.Encoding = Encoding.UTF8;
                 string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/users"); // Endereço da [API]
 
-                var users = JsonConvert.DeserializeObject<List<ListarUsers>>(json);
+                var users = JsonConvert.DeserializeObject<List<ListarUsers>>(json); // Transformar em Objeto
                 return users;
             }
             catch (Exception ex)
