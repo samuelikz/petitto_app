@@ -152,17 +152,17 @@ namespace petitto_app
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
-
+            openChildFormInPanel(new Tela_Alterar());
         }
 
         private void buttonPesquisar_Click(object sender, EventArgs e)
         {
-
+            openChildFormInPanel(new Tela_Pesquisa());
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
+            openChildFormInPanel(new Tela_Excluir());
         }
     }
 }

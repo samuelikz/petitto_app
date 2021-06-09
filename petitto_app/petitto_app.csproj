@@ -57,6 +57,24 @@
     <Compile Include="Tela_abertura.Designer.cs">
       <DependentUpon>Tela_abertura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tela_Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Alterar.Designer.cs">
+      <DependentUpon>Tela_Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Excluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Excluir.Designer.cs">
+      <DependentUpon>Tela_Excluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela_Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_Pesquisa.Designer.cs">
+      <DependentUpon>Tela_Pesquisa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Pets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +104,20 @@
     <EmbeddedResource Include="Tela_abertura.resx">
       <DependentUpon>Tela_abertura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Alterar.resx">
+      <DependentUpon>Tela_Alterar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tela_Cadastro.resx">
       <DependentUpon>Tela_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Excluir.resx">
+      <DependentUpon>Tela_Excluir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tela_Inicial.resx">
       <DependentUpon>Tela_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela_Pesquisa.resx">
+      <DependentUpon>Tela_Pesquisa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tela_Pets.resx">
       <DependentUpon>Tela_Pets.cs</DependentUpon>

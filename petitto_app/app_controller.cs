@@ -1,10 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace petitto_app
@@ -70,6 +68,7 @@ namespace petitto_app
             }
         }
 
+
         //-------------------------------------------/Função post ???/---------------------------------------------------//
 
         //public static List<app_controller> Cadastro()
@@ -80,7 +79,6 @@ namespace petitto_app
         //    newPet.Method = "post";
         //    newUser.ContentType = "application/json, charset=UTF-8";
         //    newPet.ContentType = "application/json, charset=UTF-8";
-
 
         //    string NewUser = {  };
 
