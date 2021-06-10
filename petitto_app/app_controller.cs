@@ -68,6 +68,50 @@ namespace petitto_app
             }
         }
 
+        public static void excluirUsuarioPorId(string id)
+        {
+            try
+            {
+                var rota = "https://json-serverikz.herokuapp.com/users/"+id; // Endereço da [API]
+                var requisicaoWeb = WebRequest.CreateHttp(rota);
+                requisicaoWeb.Method = "DELETE";
+                var response = (HttpWebResponse)requisicaoWeb.GetResponse();
+                response.Close();
+
+                MessageBox.Show("Exclusão Efetuada " + id);
+
+            }
+            catch (Exception ex)
+            {
+                string message = "Não foi possivel excluir os dados \n" + "Erro: " + ex.Message;
+                string title = "Algo deu errado";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+            }
+        }
+
+        public static void excluirPetsPorId(string id)
+        {
+            try
+            {
+                var rota = "https://json-serverikz.herokuapp.com/pets/"+id; // Endereço da [API]
+                var requisicaoWeb = WebRequest.CreateHttp(rota);
+                requisicaoWeb.Method = "DELETE";
+                var response = (HttpWebResponse)requisicaoWeb.GetResponse();
+                response.Close();
+
+                MessageBox.Show("Exclusão Efetuada " + id);
+
+            }
+            catch (Exception ex)
+            {
+                string message = "Não foi possivel excluir os dados \n" + "Erro: " + ex.Message;
+                string title = "Algo deu errado";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+            }
+        }
+
 
         //-------------------------------------------/Função post ???/---------------------------------------------------//
 
