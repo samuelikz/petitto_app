@@ -39,9 +39,9 @@ namespace petitto_app
 
         private void Tela_Usuarios_Load(object sender, EventArgs e)
         {
-            var users = app_controller.BuscarUsers();
+            var users = ListUser.BuscarUsers();
 
-            foreach (var item in from app_controller user in users ?? new ListarUsers<string>()
+            foreach (var item in from ListUser user in users ?? new ListarUsers<string>()
                                  let item = new ListViewItem(new[] { user.id.ToString(), user.cpf.ToString(), user.nome.ToString(), user.email.ToString(), user.telefone.ToString() })
                                  select item)
             {
@@ -60,7 +60,7 @@ namespace petitto_app
         }
     }
 
-    internal class ListarUsers<T> : List<app_controller>
+    internal class ListarUsers<T> : List<ListUser>
     {
     }
 }

@@ -82,6 +82,7 @@ namespace petitto_app
             this.listView1.Size = new System.Drawing.Size(807, 455);
             this.listView1.TabIndex = 13;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // textBox1
             // 
