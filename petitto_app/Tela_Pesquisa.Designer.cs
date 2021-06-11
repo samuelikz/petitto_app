@@ -1,8 +1,72 @@
 ﻿
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Windows.Forms;
+
 namespace petitto_app
 {
     partial class Tela_Pesquisa
     {
+        class User
+        {
+            public String nome { get; set; }
+            public String telefone { get; set; }
+            public String email { get; set; }
+
+
+            public User(string nome, string telefone, string email)
+            {
+                this.nome = nome;
+                this.telefone = telefone;
+                this.email = email;
+            }
+
+        }
+        private Boolean pesquisarUsuarioNaLista(int id)
+        {
+            try
+            {
+
+                string rota = "https://json-serverikz.herokuapp.com/doacao/" + textBox1; 
+                //string rota = "http://localhost:3000/listaRoute/";
+
+                var requisicaoWeb = WebRequest.CreateHttp(rota);
+                requisicaoWeb.Method = "GET";
+
+                using (var resposta = requisicaoWeb.GetResponse())
+
+                {
+                    var streamDados = resposta.GetResponseStream();
+                    StreamReader reader = new StreamReader(streamDados);
+                    object objResponse = reader.ReadToEnd();
+
+                    List<User> listas = JsonConvert.DeserializeObject<List<User>>(objResponse.ToString());
+                    streamDados.Close();
+                    resposta.Close();
+
+                    Boolean achou = false;
+                    foreach (User lista in listas)
+                    {
+                        MessageBox.Show(lista.getTitulo());
+                        if (lista.getIdUsuario() == id)
+                        {
+                            achou = true;
+                        }
+                    }
+
+                    return achou;
+                }
+            }
+            catch (System.Net.WebException error)
+            {
+                MessageBox.Show("Erro: " + error.Message);
+                return false;
+            }
+
+        }
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -82,6 +146,7 @@ namespace petitto_app
             this.listView1.Size = new System.Drawing.Size(807, 455);
             this.listView1.TabIndex = 13;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -95,6 +160,7 @@ namespace petitto_app
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(661, 40);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -102,7 +168,7 @@ namespace petitto_app
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.button1.Location = new System.Drawing.Point(682, 17);
             this.button1.Name = "button1";

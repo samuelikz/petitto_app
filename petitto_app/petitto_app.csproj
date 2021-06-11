@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Tela_abertura.resx">
       <DependentUpon>Tela_abertura.cs</DependentUpon>
     </EmbeddedResource>

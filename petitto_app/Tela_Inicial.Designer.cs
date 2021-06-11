@@ -89,7 +89,7 @@ namespace petitto_app
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonDelete.Location = new System.Drawing.Point(12, 514);
             this.buttonDelete.Name = "buttonDelete";
@@ -108,7 +108,7 @@ namespace petitto_app
             this.buttonPets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonPets.FlatAppearance.BorderSize = 0;
             this.buttonPets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPets.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonPets.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonPets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonPets.Location = new System.Drawing.Point(12, 109);
             this.buttonPets.Name = "buttonPets";
@@ -126,7 +126,7 @@ namespace petitto_app
             this.buttonAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonAlterar.FlatAppearance.BorderSize = 0;
             this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAlterar.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonAlterar.Location = new System.Drawing.Point(12, 433);
             this.buttonAlterar.Name = "buttonAlterar";
@@ -145,7 +145,7 @@ namespace petitto_app
             this.buttonUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonUsers.FlatAppearance.BorderSize = 0;
             this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsers.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonUsers.Location = new System.Drawing.Point(12, 190);
             this.buttonUsers.Name = "buttonUsers";
@@ -163,7 +163,7 @@ namespace petitto_app
             this.buttonPesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonPesquisar.FlatAppearance.BorderSize = 0;
             this.buttonPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPesquisar.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonPesquisar.Location = new System.Drawing.Point(12, 352);
             this.buttonPesquisar.Name = "buttonPesquisar";
@@ -181,7 +181,7 @@ namespace petitto_app
             this.buttonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
             this.buttonCad.FlatAppearance.BorderSize = 0;
             this.buttonCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCad.Font = new System.Drawing.Font("Alef", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.buttonCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.buttonCad.Location = new System.Drawing.Point(12, 271);
             this.buttonCad.Name = "buttonCad";
