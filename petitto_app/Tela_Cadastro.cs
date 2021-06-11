@@ -57,6 +57,12 @@ namespace petitto_app
 
         private void NewDoacao()
         {
+            if (String.IsNullOrEmpty(textNome.Text))
+            {
+                MessageBox.Show("Informe o ID para alterar");
+                textNome.Focus();
+                return;
+            }
 
             NewDoacao newcad = new NewDoacao(textNome.Text, textEmail.Text, textCpf.Text, textTelefone.Text, textNome_pet.Text, comboSexo.Text, comboIdade.Text, comboIdade.Text, textUrl.Text, comboCategoria.Text, textDescrincao.Text);
 

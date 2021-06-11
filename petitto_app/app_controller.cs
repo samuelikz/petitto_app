@@ -72,7 +72,7 @@ namespace petitto_app
         {
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/users/"+id; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/users/" + id; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "DELETE";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
@@ -94,7 +94,7 @@ namespace petitto_app
         {
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/pets/"+id; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/pets/" + id; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "DELETE";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
