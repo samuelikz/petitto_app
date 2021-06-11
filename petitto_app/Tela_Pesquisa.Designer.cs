@@ -50,11 +50,11 @@ namespace petitto_app
                     Boolean achou = false;
                     foreach (User lista in listas)
                     {
-                        MessageBox.Show(lista.getTitulo());
-                        if (lista.getIdUsuario() == id)
-                        {
-                            achou = true;
-                        }
+                        //MessageBox.Show(lista.getTitulo());
+                        //if (lista.getIdUsuario() == id)
+                        //{
+                        //    achou = true;
+                        //}
                     }
 
                     return achou;

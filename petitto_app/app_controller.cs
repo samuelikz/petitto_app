@@ -72,7 +72,7 @@ namespace petitto_app
         {
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/users/" + id; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/doacao/" + id; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "DELETE";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
@@ -111,22 +111,5 @@ namespace petitto_app
                 DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
             }
         }
-
-
-        //-------------------------------------------/Função post ???/---------------------------------------------------//
-
-        //public static List<app_controller> Cadastro()
-        //{
-        //    WebRequest newUser = WebRequest.Create("https://json-serverikz.herokuapp.com/users");
-        //    WebRequest newPet = WebRequest.Create("https://json-serverikz.herokuapp.com/pets");
-        //    newUser.Method = "post";
-        //    newPet.Method = "post";
-        //    newUser.ContentType = "application/json, charset=UTF-8";
-        //    newPet.ContentType = "application/json, charset=UTF-8";
-
-        //    string NewUser = {  };
-
-        //    return null;
-        //}
     }
 }
