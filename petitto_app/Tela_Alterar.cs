@@ -43,6 +43,10 @@ namespace petitto_app
 
         }
 
+        public void Pesquisar()
+        {
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try

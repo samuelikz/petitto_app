@@ -27,15 +27,7 @@ namespace petitto_app
 
         private void textNome_TextChanged(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textNome.Text))
-            {
-                string message = "Campos devem ser preenchidos \n" + "Erro: Campos Obrigatorios";
-                string title = "Algo Deu Errado";
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-                textNome.Focus();
-                return;
-            }
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -167,6 +159,7 @@ namespace petitto_app
                 DialogResult results = MessageBox.Show(messagesus, titles, buttons2, MessageBoxIcon.Information);
 
                 stream.Close();
+                this.Close();
             }
 
             catch (WebException error)
