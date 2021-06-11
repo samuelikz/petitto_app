@@ -22,52 +22,6 @@ namespace petitto_app
         public string categoria { get; set; }
         public string descrincao { get; set; }
 
-        public static List<app_controller> BuscarPets()
-        {
-            try
-            {
-                WebClient webClient = new WebClient();
-                webClient.Encoding = Encoding.UTF8;
-
-                string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/pets"); // Endereço da [API]
-
-                var pets = JsonConvert.DeserializeObject<List<app_controller>>(json); // Transformar em Objeto
-
-                return pets;
-            }
-            catch (Exception ex)
-            {
-                string message = "Não foi Possivel Carregar os Dados \n" + "Erro: " + ex.Message;
-                string title = "Algo Deu Errado";
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-
-                return null;
-            }
-        }
-
-        public static List<app_controller> BuscarUsers()
-        {
-            try
-            {
-                WebClient webClient = new WebClient();
-                webClient.Encoding = Encoding.UTF8;
-                string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/users"); // Endereço da [API]
-
-                var users = JsonConvert.DeserializeObject<List<app_controller>>(json); // Transformar em Objeto
-                return users;
-            }
-            catch (Exception ex)
-            {
-                string message = "Não foi Possivel Carregar os Dados \n" + "Erro: " + ex.Message;
-                string title = "Algo Deu Errado";
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-
-                return null;
-            }
-        }
-
         public static void excluirUsuarioPorId(string id)
         {
             try
