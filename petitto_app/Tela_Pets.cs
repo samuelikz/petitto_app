@@ -19,8 +19,8 @@ namespace petitto_app
 
         private void Tela_Pets_Load(object sender, EventArgs e)
         {
-            var pets = app_controller.BuscarPets();
-            foreach (var item in from app_controller pet in pets ?? new ListarPets<string>()
+            var pets = ListPets.BuscarPets();
+            foreach (var item in from ListPets pet in pets ?? new ListarPets<string>()
                                  let item = new ListViewItem(new[] { pet.id.ToString(), pet.cpf.ToString(), pet.nome.ToString(), pet.sexo.ToString(), pet.idade.ToString(), pet.raca.ToString(), pet.urlimage.ToString(), pet.categoria.ToString(), pet.descrincao.ToString() })
                                  select item)
             {
@@ -38,7 +38,7 @@ namespace petitto_app
 
         }
     }
-    internal class ListarPets<T> : List<app_controller>
+    internal class ListarPets<T> : List<ListPets>
     {
     }
 }

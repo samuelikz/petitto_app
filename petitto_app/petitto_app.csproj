@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app_controller.cs" />
+    <Compile Include="ListPets.cs" />
+    <Compile Include="ListUser.cs" />
+    <Compile Include="NewDoacao.cs" />
     <Compile Include="Tela_abertura.cs">
       <SubType>Form</SubType>
     </Compile>
