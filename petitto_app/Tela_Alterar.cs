@@ -57,7 +57,7 @@ namespace petitto_app
             }
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/users/" + textBox1.Text; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/pets/" + textBox1.Text; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "GET";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
@@ -120,7 +120,7 @@ namespace petitto_app
                 StreamReader reader = new StreamReader(streamDados);
                 object objResponse = reader.ReadToEnd();
                 var pets = JsonConvert.DeserializeObject<Pets>(objResponse.ToString());
-                textBox8.Text = pets.nome;
+                textBox8.Text = pets.nome_pet;
                 comboBox2.Text = pets.sexo;
                 comboBox3.Text = pets.idade;
                 comboBox1.Text = pets.categoria;
@@ -145,7 +145,7 @@ namespace petitto_app
         {
             if (!String.IsNullOrEmpty(textBox1.Text))
             {
-                string rota = "https://json-serverikz.herokuapp.com/users/" + textBox1.Text;
+                string rota = "https://json-serverikz.herokuapp.com/pets/" + textBox1.Text;
               
 
                 User users = new User();
@@ -185,7 +185,7 @@ namespace petitto_app
 
                 Pets pets = new Pets();
 
-                pets.nome = textBox8.Text;
+                pets.nome_pet = textBox8.Text;
                 pets.sexo = comboBox2.Text;
                 pets.idade = comboBox3.Text;
                 pets.categoria = comboBox1.Text;
@@ -212,6 +212,11 @@ namespace petitto_app
 
                 MessageBox.Show("Alteração realizada");
             }
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

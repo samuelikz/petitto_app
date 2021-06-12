@@ -19,18 +19,13 @@ namespace petitto_app
 
         private void Tela_Pets_Load(object sender, EventArgs e)
         {
-            var pets = ListPets.BuscarPets();
-            foreach (var item in from ListPets pet in pets ?? new ListarPets<string>()
-                                 let item = new ListViewItem(new[] { pet.id.ToString(), pet.cpf.ToString(), pet.nome.ToString(), pet.sexo.ToString(), pet.idade.ToString(), pet.raca.ToString(), pet.urlimage.ToString(), pet.categoria.ToString(), pet.descrincao.ToString() })
+            var buscarpets = ListPets.BuscarPets();
+            foreach (var item in from ListPets busca in buscarpets ?? new ListarPets<string>()
+                                 let item = new ListViewItem(new[] { busca.id.ToString(), busca.nome_pet.ToString(), busca.nome.ToString(), busca.sexo.ToString(), busca.idade.ToString(), busca.raca.ToString(), busca.categoria.ToString(), busca.urlimage.ToString(), busca.descrincao.ToString() })
                                  select item)
             {
                 listView1.Items.Add(item);
             }
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)

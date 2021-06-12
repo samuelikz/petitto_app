@@ -33,14 +33,14 @@ namespace petitto_app
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nome_pet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sexo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.urlimage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sexo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.categoria = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.urlimage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.descrincao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,13 +72,13 @@ namespace petitto_app
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
-            this.cpf,
+            this.nome_pet,
             this.nome,
             this.sexo,
             this.idade,
             this.raca,
-            this.urlimage,
             this.categoria,
+            this.urlimage,
             this.descrincao});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.listView1.GridLines = true;
@@ -95,44 +95,48 @@ namespace petitto_app
             // 
             this.id.Text = "Id";
             // 
-            // cpf
+            // nome_pet
             // 
-            this.cpf.Text = "Doador";
-            this.cpf.Width = 200;
+            this.nome_pet.Text = "Nome do Pet";
+            this.nome_pet.Width = 100;
             // 
             // nome
             // 
-            this.nome.Text = "Nome";
-            this.nome.Width = 200;
-            // 
-            // sexo
-            // 
-            this.sexo.Text = "Sexo";
-            this.sexo.Width = 90;
+            this.nome.Text = "Doador";
+            this.nome.Width = 100;
             // 
             // idade
             // 
+            this.idade.DisplayIndex = 3;
             this.idade.Text = "Idade";
+            // 
+            // sexo
+            // 
+            this.sexo.DisplayIndex = 4;
+            this.sexo.Text = "Sexo";
+            // 
+            // categoria
+            // 
+            this.categoria.DisplayIndex = 5;
+            this.categoria.Text = "Categoria";
+            this.categoria.Width = 90;
+            // 
+            // urlimage
+            // 
+            this.urlimage.DisplayIndex = 6;
+            this.urlimage.Text = "Urlimage";
+            this.urlimage.Width = 90;
+            // 
+            // descrincao
+            // 
+            this.descrincao.DisplayIndex = 7;
+            this.descrincao.Text = "Descrinção";
+            this.descrincao.Width = 200;
             // 
             // raca
             // 
             this.raca.Text = "Raça";
-            this.raca.Width = 90;
-            // 
-            // urlimage
-            // 
-            this.urlimage.Text = "ImagemUrl";
-            this.urlimage.Width = 200;
-            // 
-            // categoria
-            // 
-            this.categoria.Text = "Categoria";
-            this.categoria.Width = 80;
-            // 
-            // descrincao
-            // 
-            this.descrincao.Text = "Descrincao";
-            this.descrincao.Width = 100;
+            this.raca.Width = 150;
             // 
             // Tela_Pets
             // 
@@ -158,13 +162,13 @@ namespace petitto_app
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader id;
-        private System.Windows.Forms.ColumnHeader cpf;
+        private System.Windows.Forms.ColumnHeader nome_pet;
         private System.Windows.Forms.ColumnHeader nome;
-        private System.Windows.Forms.ColumnHeader sexo;
         private System.Windows.Forms.ColumnHeader idade;
-        private System.Windows.Forms.ColumnHeader raca;
-        private System.Windows.Forms.ColumnHeader urlimage;
+        private System.Windows.Forms.ColumnHeader sexo;
         private System.Windows.Forms.ColumnHeader categoria;
+        private System.Windows.Forms.ColumnHeader urlimage;
         private System.Windows.Forms.ColumnHeader descrincao;
+        private System.Windows.Forms.ColumnHeader raca;
     }
 }

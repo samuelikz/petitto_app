@@ -137,7 +137,7 @@ namespace petitto_app
                 NewDoacao newcad = new NewDoacao(textNome.Text, textEmail.Text, textCpf.Text, textTelefone.Text, textNome_pet.Text, comboSexo.Text, comboIdade.Text, comboCategoria.Text, textRaca.Text, textUrl.Text, textDescrincao.Text);
 
                 String newjson = JsonConvert.SerializeObject(newcad);
-                string Petrota = "https://json-serverikz.herokuapp.com/doacao"; //string rota
+                string Petrota = "https://json-serverikz.herokuapp.com/pets/"; //string rota
 
                 var request = WebRequest.CreateHttp(Petrota);
                 request.Method = "POST";

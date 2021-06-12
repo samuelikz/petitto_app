@@ -27,7 +27,7 @@ namespace petitto_app
         {
             try
             {
-                var url = "https://json-serverikz.herokuapp.com/users";
+                var url = "https://json-serverikz.herokuapp.com/pets/";
 
                 var request = WebRequest.Create(url);
                 request.Method = "GET";

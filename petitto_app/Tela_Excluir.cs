@@ -50,7 +50,7 @@ namespace petitto_app
             }
                 try
             {
-                var rota = "https://json-serverikz.herokuapp.com/users/" + textBox1.Text; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/pets/" + textBox1.Text; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "GET";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
@@ -96,7 +96,7 @@ namespace petitto_app
                 StreamReader reader = new StreamReader(streamDados);
                 object objResponse = reader.ReadToEnd();
                 var pets = JsonConvert.DeserializeObject<Pets>(objResponse.ToString());
-                textBox8.Text = pets.nome;
+                textBox8.Text = pets.nome_pet;
                 textBox5.Text = pets.raca;
                 textBox9.Text = pets.urlimage;
                 textBox10.Text = pets.descrincao;
