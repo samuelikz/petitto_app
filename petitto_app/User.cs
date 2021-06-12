@@ -9,17 +9,11 @@ namespace petitto_app
     
         class User
         {
+            public int id { get; set; }
+            public String cpf { get; set; }
             public String nome { get; set; }
             public String telefone { get; set; }
             public String email { get; set; }
-
-
-            public User(string nome, string telefone, string email)
-            {
-                this.nome = nome;
-                this.telefone = telefone;
-                this.email = email;
-            }
 
         }
     }

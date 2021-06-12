@@ -54,6 +54,7 @@
     <Compile Include="ListPets.cs" />
     <Compile Include="ListUser.cs" />
     <Compile Include="NewDoacao.cs" />
+    <Compile Include="Pets.cs" />
     <Compile Include="Tela_Alterar.cs">
       <SubType>Form</SubType>
     </Compile>

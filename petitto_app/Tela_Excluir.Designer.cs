@@ -53,6 +53,8 @@ namespace petitto_app
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +81,8 @@ namespace petitto_app
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.label12);
@@ -113,9 +117,9 @@ namespace petitto_app
             this.label13.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label13.Location = new System.Drawing.Point(428, 354);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 24);
+            this.label13.Size = new System.Drawing.Size(106, 24);
             this.label13.TabIndex = 83;
-            this.label13.Text = "Descrinção *";
+            this.label13.Text = "Descrição *";
             // 
             // textBox10
             // 
@@ -135,9 +139,9 @@ namespace petitto_app
             this.label12.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label12.Location = new System.Drawing.Point(428, 274);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 24);
+            this.label12.Size = new System.Drawing.Size(118, 24);
             this.label12.TabIndex = 81;
-            this.label12.Text = "UrlImagem *";
+            this.label12.Text = "Url Imagem *";
             // 
             // textBox9
             // 
@@ -331,7 +335,7 @@ namespace petitto_app
             this.textBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.textBox1.Location = new System.Drawing.Point(15, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(661, 40);
+            this.textBox1.Size = new System.Drawing.Size(206, 40);
             this.textBox1.TabIndex = 62;
             // 
             // button1
@@ -342,12 +346,43 @@ namespace petitto_app
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(682, 14);
+            this.button1.Location = new System.Drawing.Point(227, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 40);
             this.button1.TabIndex = 61;
             this.button1.Text = "PESQUISAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox7.Font = new System.Drawing.Font("Arial", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.textBox7.Location = new System.Drawing.Point(432, 16);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(206, 40);
+            this.textBox7.TabIndex = 85;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(178)))), ((int)(((byte)(54)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.button3.Location = new System.Drawing.Point(644, 16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 40);
+            this.button3.TabIndex = 84;
+            this.button3.Text = "PESQUISAR";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Tela_Excluir
             // 
@@ -393,5 +428,7 @@ namespace petitto_app
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button button3;
     }
 }

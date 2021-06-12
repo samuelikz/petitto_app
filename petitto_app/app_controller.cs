@@ -21,12 +21,12 @@ namespace petitto_app
         public string urlimage { get; set; }
         public string categoria { get; set; }
         public string descrincao { get; set; }
-
+        
         public static void excluirUsuarioPorId(string id)
         {
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/doacao/" + id; // Endereço da [API]
+                var rota = "https://json-serverikz.herokuapp.com/users/" + id; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "DELETE";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
