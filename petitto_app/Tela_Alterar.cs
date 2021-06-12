@@ -189,6 +189,7 @@ namespace petitto_app
                 pets.sexo = comboBox2.Text;
                 pets.idade = comboBox3.Text;
                 pets.categoria = comboBox1.Text;
+                pets.cpf = "typicode";
                 pets.raca = textBox5.Text;
                 pets.urlimage = textBox9.Text;
                 pets.descrincao = textBox10.Text;
