@@ -134,7 +134,7 @@ namespace petitto_app
                     return;
                 }
 
-                NewDoacao newcad = new NewDoacao(textNome.Text, textEmail.Text, textCpf.Text, textTelefone.Text, textNome_pet.Text, comboSexo.Text, comboIdade.Text, comboCategoria.Text, textRaca.Text, textUrl.Text, textDescrincao.Text);
+                NewDoacao newcad = new NewDoacao(textNome.Text, textEmail.Text, textCpf.Text, textTelefone.Text, textNome_pet.Text, comboSexo.Text, comboIdade.Text, textRaca.Text, textUrl.Text, comboCategoria.Text, textDescrincao.Text);
 
                 String newjson = JsonConvert.SerializeObject(newcad);
                 string Petrota = "https://json-serverikz.herokuapp.com/pets/"; //string rota
