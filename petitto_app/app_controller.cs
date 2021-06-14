@@ -21,30 +21,8 @@ namespace petitto_app
         public string urlimage { get; set; }
         public string categoria { get; set; }
         public string descrincao { get; set; }
-        
+
         public static void excluirUsuarioPorId(string id)
-        {
-            try
-            {
-                var rota = "https://json-serverikz.herokuapp.com/users/" + id; // Endereço da [API]
-                var requisicaoWeb = WebRequest.CreateHttp(rota);
-                requisicaoWeb.Method = "DELETE";
-                var response = (HttpWebResponse)requisicaoWeb.GetResponse();
-                response.Close();
-
-                MessageBox.Show("Exclusão Efetuada " + id);
-
-            }
-            catch (Exception ex)
-            {
-                string message = "Não foi possivel excluir os dados \n" + "Erro: " + ex.Message;
-                string title = "Algo deu errado";
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-            }
-        }
-
-        public static void excluirPetsPorId(string id)
         {
             try
             {
@@ -54,8 +32,10 @@ namespace petitto_app
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();
                 response.Close();
 
-                MessageBox.Show("Exclusão Efetuada " + id);
-
+                string message = "Exclusão Realizada " + id + "\n";
+                string title = "Sucesso";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

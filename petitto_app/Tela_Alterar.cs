@@ -45,10 +45,6 @@ namespace petitto_app
 
         public void Pesquisar()
         {
-
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
             if (String.IsNullOrEmpty(textBox1.Text))
             {
                 MessageBox.Show("Informe o ID para alterar.");
@@ -65,11 +61,18 @@ namespace petitto_app
                 // Classe StreamReader: Lê caracteres de um fluxo de bytes 
                 StreamReader reader = new StreamReader(streamDados);
                 object objResponse = reader.ReadToEnd();
-                var users = JsonConvert.DeserializeObject<User>(objResponse.ToString());
+                var users = JsonConvert.DeserializeObject<NewDoacao>(objResponse.ToString());
                 textBox6.Text = users.nome;
                 textBox2.Text = users.email;
                 textBox3.Text = users.cpf;
                 textBox4.Text = users.telefone;
+                textBox8.Text = users.nome_pet;
+                comboBox2.Text = users.sexo;
+                comboBox3.Text = users.idade;
+                comboBox1.Text = users.categoria;
+                textBox5.Text = users.raca;
+                textBox9.Text = users.urlimage;
+                textBox10.Text = users.descrincao;
 
                 streamDados.Close();
                 response.Close();
@@ -84,7 +87,10 @@ namespace petitto_app
                 DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
             }
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Pesquisar();
+        }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
@@ -101,44 +107,13 @@ namespace petitto_app
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void success()
         {
-            if (String.IsNullOrEmpty(textBox7.Text))
-            {
-                MessageBox.Show("Informe o ID para alterar.");
-                textBox7.Focus();
-                return;
-            }
-            try
-            {
-                var rota = "https://json-serverikz.herokuapp.com/pets/" + textBox7.Text; // Endereço da [API]
-                var requisicaoWeb = WebRequest.CreateHttp(rota);
-                requisicaoWeb.Method = "GET";
-                var response = (HttpWebResponse)requisicaoWeb.GetResponse();
-                var streamDados = response.GetResponseStream();
-                // Classe StreamReader: Lê caracteres de um fluxo de bytes 
-                StreamReader reader = new StreamReader(streamDados);
-                object objResponse = reader.ReadToEnd();
-                var pets = JsonConvert.DeserializeObject<Pets>(objResponse.ToString());
-                textBox8.Text = pets.nome_pet;
-                comboBox2.Text = pets.sexo;
-                comboBox3.Text = pets.idade;
-                comboBox1.Text = pets.categoria;
-                textBox5.Text = pets.raca;
-                textBox9.Text = pets.urlimage;
-                textBox10.Text = pets.descrincao;
-                    
-
-                streamDados.Close();
-                response.Close();
-            }
-            catch (Exception ex)
-            {
-                string message = "Não foi possivel consultar os dados \n" + "Erro: " + ex.Message;
-                string title = "Algo deu errado";
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-            }
+            string message = "Alteração Realizada \n";
+            string title = "Sucesso";
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -146,15 +121,21 @@ namespace petitto_app
             if (!String.IsNullOrEmpty(textBox1.Text))
             {
                 string rota = "https://json-serverikz.herokuapp.com/pets/" + textBox1.Text;
-              
+
 
                 User users = new User();
+
                 users.nome = textBox6.Text;
                 users.email = textBox2.Text;
                 users.cpf = textBox3.Text;
-                users.telefone = textBox4.Text;
-
-
+                users.telefone=textBox4.Text;
+                users.nome_pet=textBox8.Text;
+                users.sexo=comboBox2.Text;
+                users.idade=comboBox3.Text;
+                users.categoria=comboBox1.Text;
+                users.raca=textBox5.Text;
+                users.urlimage=textBox9.Text; 
+                users.descrincao=textBox10.Text;
 
                 String json = JsonConvert.SerializeObject(users);
 
@@ -169,50 +150,10 @@ namespace petitto_app
 
                 Stream stream = requisicaoWeb.GetRequestStream();
 
+                success();
                 stream.Write(byteArray, 0, byteArray.Length);
                 stream.Close();
-
-                MessageBox.Show("Alteração realizada");
-
             }
-
-            if (!String.IsNullOrEmpty(textBox7.Text))
-            {
-
-                string rota = "https://json-serverikz.herokuapp.com/pets/" + textBox7.Text;
-                
-
-
-                Pets pets = new Pets();
-
-                pets.nome_pet = textBox8.Text;
-                pets.sexo = comboBox2.Text;
-                pets.idade = comboBox3.Text;
-                pets.categoria = comboBox1.Text;
-                pets.cpf = "typicode";
-                pets.raca = textBox5.Text;
-                pets.urlimage = textBox9.Text;
-                pets.descrincao = textBox10.Text;
-
-                String json = JsonConvert.SerializeObject(pets);
-
-                var requisicaoWeb = WebRequest.CreateHttp(rota);
-                requisicaoWeb.Method = "PUT";
-
-                requisicaoWeb.ContentType = "application/json; charset=utf-8";
-
-                var byteArray = Encoding.UTF8.GetBytes(json);
-
-                requisicaoWeb.ContentLength = byteArray.Length;
-
-                Stream stream = requisicaoWeb.GetRequestStream();
-
-                stream.Write(byteArray, 0, byteArray.Length);
-                stream.Close();
-
-                MessageBox.Show("Alteração realizada");
-            }
-
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)

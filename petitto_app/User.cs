@@ -14,6 +14,13 @@ namespace petitto_app
             public String nome { get; set; }
             public String telefone { get; set; }
             public String email { get; set; }
+            public string nome_pet { get; set; }
+            public string sexo { get; set; }
+            public string idade { get; set; }
+            public string raca { get; set; }
+            public string urlimage { get; set; }
+            public string categoria { get; set; }
+            public string descrincao { get; set; }
 
-        }
+    }
     }
