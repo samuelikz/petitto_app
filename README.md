@@ -1,12 +1,26 @@
 # petitto_app
 C# Aplicação Petitto
 
+#Bibliotecas 
+
+- using Newtonsoft.Json;
+- using System.Collections.Generic;
+- using System.IO;
+- using System.Net;
+- using System.Text;
+
+#Requisições 
+
+- GET
+- PUT
+- DELETE
+- UPDATE
 
 https://user-images.githubusercontent.com/62406705/119066206-a72e9880-b9b5-11eb-9ce9-a1f42a9acdd0.mp4(url)
 
 ### Bugs
 
-- Carregamento pode travar aplicação, uma solução seria adicionar uma tela de loading..
+- Versão 1.0 Não foram encontrados bugs
 
 ### Conexão a Api-Json
 ```
