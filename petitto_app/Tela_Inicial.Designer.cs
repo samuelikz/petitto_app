@@ -29,6 +29,7 @@ namespace petitto_app
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Inicial));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.labelVersion = new System.Windows.Forms.Label();
@@ -44,14 +45,32 @@ namespace petitto_app
             this.buttonRestore = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             this.panelNavbar.SuspendLayout();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(228)))));
+            label1.Location = new System.Drawing.Point(24, 21);
+            label1.Margin = new System.Windows.Forms.Padding(0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(191, 41);
+            label1.TabIndex = 7;
+            label1.Text = "Petitto inc.";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(76)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(56)))), ((int)(((byte)(87)))));
+            this.panelMenu.Controls.Add(label1);
             this.panelMenu.Controls.Add(this.labelVersion);
             this.panelMenu.Controls.Add(this.buttonDelete);
             this.panelMenu.Controls.Add(this.buttonPets);
@@ -71,130 +90,134 @@ namespace petitto_app
             // 
             // labelVersion
             // 
+            this.labelVersion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelVersion.AutoSize = true;
-            this.labelVersion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(204)))));
-            this.labelVersion.Location = new System.Drawing.Point(0, 716);
+            this.labelVersion.Location = new System.Drawing.Point(232, 693);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(3);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(23, 13);
+            this.labelVersion.Padding = new System.Windows.Forms.Padding(10);
+            this.labelVersion.Size = new System.Drawing.Size(43, 33);
             this.labelVersion.TabIndex = 1;
             this.labelVersion.Text = "V.1";
+            this.labelVersion.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.labelVersion.Click += new System.EventHandler(this.labelVersion_Click);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.BackColor = System.Drawing.Color.Transparent;
             this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonDelete.Location = new System.Drawing.Point(12, 514);
+            this.buttonDelete.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonDelete.Location = new System.Drawing.Point(1, 426);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Padding = new System.Windows.Forms.Padding(1);
-            this.buttonDelete.Size = new System.Drawing.Size(260, 75);
+            this.buttonDelete.Size = new System.Drawing.Size(281, 60);
             this.buttonDelete.TabIndex = 6;
-            this.buttonDelete.Text = "EXCLUIR";
+            this.buttonDelete.Text = "Excluir";
             this.buttonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonPets
             // 
-            this.buttonPets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonPets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPets.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPets.Cursor = System.Windows.Forms.Cursors.Default;
             this.buttonPets.FlatAppearance.BorderSize = 0;
+            this.buttonPets.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonPets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPets.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonPets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonPets.Location = new System.Drawing.Point(12, 109);
+            this.buttonPets.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonPets.Location = new System.Drawing.Point(1, 109);
             this.buttonPets.Name = "buttonPets";
-            this.buttonPets.Size = new System.Drawing.Size(260, 75);
+            this.buttonPets.Size = new System.Drawing.Size(281, 60);
             this.buttonPets.TabIndex = 1;
-            this.buttonPets.Text = "LISTAR PETS";
+            this.buttonPets.Text = "Listar Pets";
             this.buttonPets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPets.UseVisualStyleBackColor = false;
             this.buttonPets.Click += new System.EventHandler(this.buttonPets_Click_1);
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAlterar.BackColor = System.Drawing.Color.Transparent;
             this.buttonAlterar.FlatAppearance.BorderSize = 0;
+            this.buttonAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonAlterar.Location = new System.Drawing.Point(12, 433);
+            this.buttonAlterar.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonAlterar.Location = new System.Drawing.Point(1, 362);
             this.buttonAlterar.Name = "buttonAlterar";
             this.buttonAlterar.Padding = new System.Windows.Forms.Padding(1);
-            this.buttonAlterar.Size = new System.Drawing.Size(260, 75);
+            this.buttonAlterar.Size = new System.Drawing.Size(281, 60);
             this.buttonAlterar.TabIndex = 5;
-            this.buttonAlterar.Text = "ALTERAR";
+            this.buttonAlterar.Text = "Alterar";
             this.buttonAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAlterar.UseVisualStyleBackColor = false;
             this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonUsers
             // 
-            this.buttonUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUsers.BackColor = System.Drawing.Color.Transparent;
             this.buttonUsers.FlatAppearance.BorderSize = 0;
+            this.buttonUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonUsers.Location = new System.Drawing.Point(12, 190);
+            this.buttonUsers.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonUsers.Location = new System.Drawing.Point(-1, 171);
             this.buttonUsers.Name = "buttonUsers";
-            this.buttonUsers.Size = new System.Drawing.Size(260, 75);
+            this.buttonUsers.Size = new System.Drawing.Size(281, 60);
             this.buttonUsers.TabIndex = 2;
-            this.buttonUsers.Text = "LISTAR USUARIOS";
+            this.buttonUsers.Text = "Listar Usuários";
             this.buttonUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonUsers.UseVisualStyleBackColor = false;
             this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click_1);
             // 
             // buttonPesquisar
             // 
-            this.buttonPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonPesquisar.BackColor = System.Drawing.Color.Transparent;
             this.buttonPesquisar.FlatAppearance.BorderSize = 0;
+            this.buttonPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonPesquisar.Location = new System.Drawing.Point(12, 352);
+            this.buttonPesquisar.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonPesquisar.Location = new System.Drawing.Point(1, 297);
             this.buttonPesquisar.Name = "buttonPesquisar";
-            this.buttonPesquisar.Size = new System.Drawing.Size(260, 75);
+            this.buttonPesquisar.Size = new System.Drawing.Size(281, 60);
             this.buttonPesquisar.TabIndex = 4;
-            this.buttonPesquisar.Text = "PESQUISAR";
+            this.buttonPesquisar.Text = "Pesquisar";
             this.buttonPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPesquisar.UseVisualStyleBackColor = false;
             this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
             // buttonCad
             // 
-            this.buttonCad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(151)))), ((int)(((byte)(44)))));
+            this.buttonCad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCad.BackColor = System.Drawing.Color.Transparent;
             this.buttonCad.FlatAppearance.BorderSize = 0;
+            this.buttonCad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
             this.buttonCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
-            this.buttonCad.Location = new System.Drawing.Point(12, 271);
+            this.buttonCad.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(203)))));
+            this.buttonCad.Location = new System.Drawing.Point(0, 233);
             this.buttonCad.Name = "buttonCad";
-            this.buttonCad.Size = new System.Drawing.Size(260, 75);
+            this.buttonCad.Size = new System.Drawing.Size(281, 60);
             this.buttonCad.TabIndex = 3;
-            this.buttonCad.Text = "CADASTRAR";
+            this.buttonCad.Text = "Cadastrar";
             this.buttonCad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCad.UseVisualStyleBackColor = false;
             this.buttonCad.Click += new System.EventHandler(this.buttonCad_Click);
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panelChildForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChildForm.BackgroundImage")));
             this.panelChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelChildForm.Controls.Add(this.panelNavbar);
@@ -208,8 +231,10 @@ namespace petitto_app
             // panelNavbar
             // 
             this.panelNavbar.AutoSize = true;
+            this.panelNavbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panelNavbar.Controls.Add(this.buttonRestore);
             this.panelNavbar.Controls.Add(this.Close);
+            this.panelNavbar.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelNavbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavbar.Location = new System.Drawing.Point(0, 0);
             this.panelNavbar.Name = "panelNavbar";

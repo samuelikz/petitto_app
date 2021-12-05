@@ -59,6 +59,7 @@ namespace petitto_app
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -73,12 +74,13 @@ namespace petitto_app
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(102)))));
             this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 33);
+            this.label1.Size = new System.Drawing.Size(88, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "EXCLUIR";
+            this.label1.Text = "Excluir";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.label12);
@@ -317,7 +319,7 @@ namespace petitto_app
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 46);
             this.button2.TabIndex = 63;
-            this.button2.Text = "EXCLUIR";
+            this.button2.Text = "Excluir";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -343,7 +345,7 @@ namespace petitto_app
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 40);
             this.button1.TabIndex = 61;
-            this.button1.Text = "PESQUISAR";
+            this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

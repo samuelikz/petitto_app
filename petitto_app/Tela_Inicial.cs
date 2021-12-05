@@ -163,5 +163,10 @@ namespace petitto_app
         {
             openChildFormInPanel(new Tela_Excluir());
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

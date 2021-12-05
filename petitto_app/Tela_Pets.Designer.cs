@@ -35,17 +35,18 @@ namespace petitto_app
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome_pet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sexo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.categoria = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.urlimage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.descrincao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -60,9 +61,9 @@ namespace petitto_app
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(102)))));
             this.label1.Location = new System.Drawing.Point(12, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 33);
+            this.label1.Size = new System.Drawing.Size(63, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PETS";
+            this.label1.Text = "Pets";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listView1
@@ -105,44 +106,39 @@ namespace petitto_app
             this.nome.Text = "Doador";
             this.nome.Width = 100;
             // 
-            // idade
-            // 
-            this.idade.DisplayIndex = 3;
-            this.idade.Text = "Idade";
-            // 
             // sexo
             // 
-            this.sexo.DisplayIndex = 4;
             this.sexo.Text = "Sexo";
             // 
-            // categoria
+            // idade
             // 
-            this.categoria.DisplayIndex = 5;
-            this.categoria.Text = "Categoria";
-            this.categoria.Width = 90;
-            // 
-            // urlimage
-            // 
-            this.urlimage.DisplayIndex = 6;
-            this.urlimage.Text = "Urlimage";
-            this.urlimage.Width = 90;
-            // 
-            // descrincao
-            // 
-            this.descrincao.DisplayIndex = 7;
-            this.descrincao.Text = "Descrinção";
-            this.descrincao.Width = 200;
+            this.idade.Text = "Idade";
             // 
             // raca
             // 
             this.raca.Text = "Raça";
             this.raca.Width = 150;
             // 
+            // categoria
+            // 
+            this.categoria.Text = "Categoria";
+            this.categoria.Width = 90;
+            // 
+            // urlimage
+            // 
+            this.urlimage.Text = "Urlimage";
+            this.urlimage.Width = 90;
+            // 
+            // descrincao
+            // 
+            this.descrincao.Text = "Descrinção";
+            this.descrincao.Width = 200;
+            // 
             // Tela_Pets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(837, 637);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.panel1);

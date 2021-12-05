@@ -32,9 +32,9 @@ namespace petitto_app
             this.panel1 = new System.Windows.Forms.Panel();
             this.listView_Users = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cpf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.telefone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@ namespace petitto_app
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panel1.Controls.Add(this.listView_Users);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -80,6 +80,11 @@ namespace petitto_app
             // 
             this.id.Text = "Id";
             // 
+            // cpf
+            // 
+            this.cpf.Text = "CPF";
+            this.cpf.Width = 130;
+            // 
             // nome
             // 
             this.nome.Text = "Nome";
@@ -90,11 +95,6 @@ namespace petitto_app
             this.email.Text = "E-mail";
             this.email.Width = 200;
             // 
-            // cpf
-            // 
-            this.cpf.Text = "CPF";
-            this.cpf.Width = 130;
-            // 
             // telefone
             // 
             this.telefone.Text = "Telefone";
@@ -102,6 +102,7 @@ namespace petitto_app
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(242)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -114,12 +115,12 @@ namespace petitto_app
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(102)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(82)))), ((int)(((byte)(94)))));
             this.label1.Location = new System.Drawing.Point(12, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 33);
+            this.label1.Size = new System.Drawing.Size(114, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "USUARIOS";
+            this.label1.Text = "Usuários";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Tela_Usuarios
