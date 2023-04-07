@@ -38,7 +38,7 @@ namespace petitto_app
             {
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                string json = webClient.DownloadString("https://json-serverikz.herokuapp.com/pets/"); // Endereço da [API]
+                string json = webClient.DownloadString("https://json-server.samuelikz.repl.co/pets/"); // Endereço da [API]
 
                 var buscarpets = JsonConvert.DeserializeObject<List<ListPets>>(json); // Transformar em Objeto
 
