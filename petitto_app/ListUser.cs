@@ -27,7 +27,7 @@ namespace petitto_app
         {
             try
             {
-                var url = "https://json-server.samuelikz.repl.co/pets";
+                var url = "https://json-server.samuelikz.repl.co/users/";
 
                 var request = WebRequest.Create(url);
                 request.Method = "GET";
