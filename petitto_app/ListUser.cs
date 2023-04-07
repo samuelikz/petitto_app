@@ -27,7 +27,7 @@ namespace petitto_app
         {
             try
             {
-                var url = "https://json-server.samuelikz.repl.co/users/";
+                var url = "https://doa-bem-api.onrender.com/users/";
 
                 var request = WebRequest.Create(url);
                 request.Method = "GET";

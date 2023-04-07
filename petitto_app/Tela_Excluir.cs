@@ -44,7 +44,7 @@ namespace petitto_app
             }
                 try
             {
-                var rota = "https://json-serverikz.herokuapp.com/pets/" + textBox1.Text; // Endereço da [API]
+                var rota = "https://doa-bem-api.onrender.com/pets/" + textBox1.Text; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "GET";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();

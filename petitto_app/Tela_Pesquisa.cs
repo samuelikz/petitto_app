@@ -33,7 +33,7 @@ namespace petitto_app
             try
             {
                 // Endereço da [API]
-                var rota = "https://json-serverikz.herokuapp.com/pets/" + id; 
+                var rota = "https://doa-bem-api.onrender.com/pets/" + id; 
 
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "GET";

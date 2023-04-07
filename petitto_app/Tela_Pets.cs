@@ -21,7 +21,7 @@ namespace petitto_app
         {
             var buscarpets = ListPets.BuscarPets();
             foreach (var item in from ListPets busca in buscarpets ?? new ListarPets<string>()
-                                 let item = new ListViewItem(new[] { busca.id.ToString(), busca.nome_pet.ToString(), busca.nome.ToString(), busca.sexo.ToString(), busca.idade.ToString(), busca.raca.ToString(), busca.categoria.ToString(), busca.urlimage.ToString(), busca.descrincao.ToString() })
+                                 let item = new ListViewItem(new[] { busca.id.ToString(),  busca.nome.ToString(), busca.sexo.ToString(), busca.idade.ToString(), busca.raca.ToString(), busca.categoria.ToString(), busca.urlimage.ToString(), busca.descrincao.ToString() })
                                  select item)
             {
                 listView1.Items.Add(item);

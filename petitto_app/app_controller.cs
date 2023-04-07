@@ -26,7 +26,7 @@ namespace petitto_app
         {
             try
             {
-                var rota = "https://json-serverikz.herokuapp.com/pets/" + id; // Endereço da [API]
+                var rota = "https://doa-bem-api.onrender.com/pets/" + id; // Endereço da [API]
                 var requisicaoWeb = WebRequest.CreateHttp(rota);
                 requisicaoWeb.Method = "DELETE";
                 var response = (HttpWebResponse)requisicaoWeb.GetResponse();

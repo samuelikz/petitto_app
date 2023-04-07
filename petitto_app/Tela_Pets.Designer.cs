@@ -34,7 +34,6 @@ namespace petitto_app
             this.listView1 = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.nome_pet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sexo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.idade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.raca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -74,7 +73,6 @@ namespace petitto_app
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
             this.nome_pet,
-            this.nome,
             this.sexo,
             this.idade,
             this.raca,
@@ -100,11 +98,6 @@ namespace petitto_app
             // 
             this.nome_pet.Text = "Nome do Pet";
             this.nome_pet.Width = 100;
-            // 
-            // nome
-            // 
-            this.nome.Text = "Doador";
-            this.nome.Width = 100;
             // 
             // sexo
             // 
@@ -159,7 +152,6 @@ namespace petitto_app
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.ColumnHeader nome_pet;
-        private System.Windows.Forms.ColumnHeader nome;
         private System.Windows.Forms.ColumnHeader idade;
         private System.Windows.Forms.ColumnHeader sexo;
         private System.Windows.Forms.ColumnHeader categoria;
